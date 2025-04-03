@@ -30,4 +30,6 @@ export class AppComponent {
       age:34
     }
   ]
+
+  selectedTheme:string='';
 }

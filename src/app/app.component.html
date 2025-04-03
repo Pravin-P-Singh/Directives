@@ -25,3 +25,18 @@
     </tr>
   </tbody>
 </table>
+
+<h3>*****************NgSwitchCase*****************</h3>
+<h3>ngSwitch Ex</h3>
+<select name="theme" [(ngModel)]="selectedTheme">
+  <option value="red">Red</option>
+  <option value="yellow">Yellow</option>
+  <option value="green">Green</option>
+</select>
+
+<div [ngSwitch]="selectedTheme">
+  <p *ngSwitchCase="'red'">Selected theme is red</p>
+  <p *ngSwitchCase="'yellow'">Selected theme is yellow</p>
+  <p *ngSwitchCase="'green'">Selected theme is green</p>
+  <p *ngSwitchDefault="''">You haven't selected any theme</p>
+</div>

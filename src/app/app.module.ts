@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor, NgIf, NgSwitch } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { NgFor, NgIf } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     NgIf,
-    NgFor
+    NgFor,
+    FormsModule,
+    NgSwitch
   ],
   providers: [],
   bootstrap: [AppComponent]
