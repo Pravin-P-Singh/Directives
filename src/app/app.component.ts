@@ -32,4 +32,33 @@ export class AppComponent {
   ]
 
   selectedTheme:string='';
+
+  //attribute directive
+
+  //ngStyle
+  p_color:String="";
+
+  User={
+    username:"",
+    password:""
+  }
+  msg:string="";
+  login(){
+    if(this.User.username==="Pravin" && this.User.password==="123"){
+      alert("Logged in successfully");
+    }
+    if(this.User.username!="Pravin"){
+      this.p_color="blue";
+      this.msg="Invalid Username"
+    }
+    if(this.User.password!="123"){
+      this.p_color="black";
+      this.msg="Incorrect password";
+    }
+    if(this.User.username!="Pravin" && this.User.password!="123"){
+      this.p_color="red";
+      this.msg="Invalid username and password";
+    }
+  }
+
 }

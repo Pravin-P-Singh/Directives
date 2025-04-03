@@ -40,3 +40,18 @@
   <p *ngSwitchCase="'green'">Selected theme is green</p>
   <p *ngSwitchDefault="''">You haven't selected any theme</p>
 </div>
+
+<h2>Attribute Directives</h2>
+<h4>There are 2 types :: 1. ngStyle 2. ngClass</h4>
+<h3>ngStyle</h3>
+
+<form>
+  <h5 [ngStyle]="{'color':p_color}">{{msg}}</h5>
+  Username: <input type="text" [(ngModel)]="User.username" name="username" id="username"> <br> <br>
+  Password: <input type="text" [(ngModel)]="User.password" name="password" id="password"> <br> <br>
+  <button (click)="login()">Login</button>
+</form>
+
+<p [ngStyle]="{'color':p_color}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero velit animi porro
+  ea omnis repudiandae aperiam quis blanditiis, cum, assumenda odit nostrum optio fugit? Rerum vero repellendus
+  perspiciatis nisi.</p>
