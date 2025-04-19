@@ -55,3 +55,11 @@
 <p [ngStyle]="{'color':p_color}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero velit animi porro
   ea omnis repudiandae aperiam quis blanditiis, cum, assumenda odit nostrum optio fugit? Rerum vero repellendus
   perspiciatis nisi.</p>
+
+
+<h3>ngClass</h3>
+<p [ngClass]="isTrue?'valid':'invalid'">This paragraph css will be changed(dynamically) using ngClass</p>
+//Another way 1 (using multiple classes inside curly braces)
+<p [ngClass]="{'valid':isTrue,'invalid':!isTrue}">This paragraph css will be changed(dynamically) using ngClass</p>
+//Another way 2 (using a num variable)
+<p [ngClass]="{'valid':num==1,'invalid':num==2}">This paragraph css will be changed(dynamically) using ngClass</p>

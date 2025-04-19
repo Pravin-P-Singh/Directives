@@ -61,4 +61,9 @@ export class AppComponent {
     }
   }
 
+  //ngClass
+  isTrue:boolean = false;
+
+  //Sir's way
+  num:number = 1;
 }
